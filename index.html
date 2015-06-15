@@ -5,9 +5,26 @@
 	<meta charset="UTF-8">
 	<title>Ante Up Fantasy Sports</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<script>
+		function startTime() {
+		    var today=new Date();
+		    var h=today.getHours();
+		    var m=today.getMinutes();
+		    var s=today.getSeconds();
+		    m = checkTime(m);
+		    s = checkTime(s);
+		    document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+		    var t = setTimeout(function(){startTime()},500);
+		}
+		function checkTime(i) {
+		    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+		    return i;
+		}
+	</script>
 </head>
 
-<body>
+<body onload="startTime()">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-2 col-md-4"></div>
@@ -17,10 +34,13 @@
 				<p>Start your <b>1<sup>st</sup></b> <i>contest</i> today and experience<br /> all the great action! </p>
 				<p><strong>Get $25 credit towards your first contest when you create an account</strong></p>
 				<p>Login using your Facebook account and share you results with friends</p>
+				
+				<h1 class="text-center" id="txt"></h1>
 			</div>
 			<div class="col-xs-2 col-md-4"></div>
 		</div>
 	</div>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
 </body>
 </html>
