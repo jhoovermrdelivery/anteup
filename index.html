@@ -5,59 +5,44 @@
 	<meta charset="UTF-8">
 	<title>Ante Up Fantasy Sports</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles.css" type="text/css" />
-	
-	<script>
-		
-		function startTime() {
-		    var today=new Date();
-		    var h=today.getHours();
-		    var m=today.getMinutes();
-		    var s=today.getSeconds();
-		    m = checkTime(m);
-		    s = checkTime(s);
-		    document.getElementById('txt').innerHTML = h+":"+m+":"+s;
-		    var t = setTimeout(function(){startTime()},500);
-		}
-		function checkTime(i) {
-		    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
-		    return i;
-		}
-	</script>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body onload="startTime()">
+	 <form action="http://www.example.com/login.php">
+        <p>Username:
+            <input type="text" name="username" size="15"
+            maxlength="30" />
+        </p>
+      <p>Password:
+      <input type="password" size="15" maxlength="30" />
+      </p>
+      </form>
 	<h1 id="top">Ante Up Fantasy Sports Terms</h1>
 	<a href="#Daily_Fantasy_Sports">Daily Fantasy Sports</a><br />
 	<a href="#Head_to_Head">Head to Head</a><br />
-	
-	
-</head>
-<body onload="startTime()">
 	<div class="container">
 		<div class="row">
 			<address>
 				<p>
-					<a href="mailto:anteupfantasysports@gmail.com">
-					Contact <abbr title="Ante Up Fantasy Sports"><b>AUFS</b></abbr>
-				</a>
-					</p>
-					<p>
-						<ul>
-							<li><a href="about.html">About</a></li>
-						</ul>
-					</p>
-				</address>
-					<dl>
-						<h2 id="Daily_Fantasy_Sports"><dt>Daily Fantasy Sports</dt></h2>
-							<dd>A game of skill, legalized throughout the United States</dd>
-						<h2 id="Head_to_Head"><dt>Head to Head</dt></h2>
-							<dd>Users are matched up against opponents within the same competition</dd>
-					</dl>
-			
-			
-	<div class="col-xs-2 col-md-4"></div>
+					<a href="mailto:anteupfantasysports@gmail.com">Contact <abbr title="Ante Up Fantasy Sports"><b>AUFS</b></abbr></a>
+				</p>
+				<p>
+					<ul>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</p>
+			</address>
+			<dl>
+				<h2 id="Daily_Fantasy_Sports"><dt>Daily Fantasy Sports</dt></h2>
+					<dd>A game of skill, legalized throughout the United States</dd>
+				<h2 id="Head_to_Head"><dt>Head to Head</dt></h2>
+					<dd>Users are matched up against opponents within the same competition</dd>
+			</dl>
+			<div class="col-xs-2 col-md-4"></div>
 			<div class="col-xs-8 col-md-4">
 				
 				<h1 class="text-center">Ante Up Fantasy Sports</h1>
-					<h4>What is AUFS?</h4>
+				<h4>What is AUFS?</h4>
 				
 				<p><abbr title="Ante Up Fantasy Sports"><b>AUFS</b></abbr> is not your average <i>Daily Fantasy Sports</i> site. We have innovative gameplay functionalities that allow users to experience the full capabilities of managing a lineup like a pro!</p>
 				
@@ -67,42 +52,34 @@
 				
 				<p>Login using your Facebook account and share you results with friends</p>
 				
-				<h1 class="text-center" id="txt"></h1>
-				
+				<h1 class="text-center" name="time" id="txt"></h1>
 				<h3>How to Begin Playing With AUFS</h3>
-					<ol>
-						<li>Create an account</li>
-							<li>Select a contest or create a contest</li>
-								<li>Submit a lineup for play</li>
-									<li>Follow live results</li>
-						
-					</ol>
-						<h4>How to deposit money into your account</h4>
-						
+				<ol>
+					<li>Create an account</li>
+					<li>Select a contest or create a contest</li>
+					<li>Submit a lineup for play</li>
+					<li>Follow live results</li>
+				</ol>
+				<h4>How to deposit money into your account</h4>
+				<ul>
+					<li>Login to your account</li>
+					<li>Visit your user profile and then add monetary values via Paypal or credit card</li>
+					<li>Forms of Payment Accepted
 						<ul>
-						
-						<li>Login to your account</li>
-						
-						<li>Visit your user profile and then add monetary values via Paypal or credit card</li>
-						
-						<li>Forms of Payment Accepted
-							<ul>
-								<li>Visa</li>
-								<li>Mastercard</li>
-								</ul>
-									</li>
-					</ul>
-			
+							<li>Visa</li>
+							<li>Mastercard</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-			
 			<div class="col-xs-2 col-md-4"></div>
-		
 		</div>
-	
 		<div class="row">
 			<div class="col-xs-4 col-offset-xs-4">Changes made here.</div>
 		</div>
+		</div>
 	</div>
+	<script type="text/javascript" src="css/main.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	
 </body>
