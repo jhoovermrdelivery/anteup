@@ -10,24 +10,37 @@
     <body>
         <div class="container"></div>
         <div class="column"></div>
+        
+        <!--Links to Home Page and About Page-->
+        
         <a href="index.html">Home</a> <br />
         <a href="about.html">About</a>  
         <form action="http://www.example.com/search.php">
+            
+        <!--Search AUFS Bar-->
+            
             <p>Search AUFS</p>
+            
+        <!--Enter Search Terms Placeholder Text-->    
+            
             <input type="search" name="search"
             placeholder="Enter Search Terms"/>
             <input type="submit" value="Search AUFS" />
         </form>
-            
-        </form>
         <div class="container"></div>
         <div class="column"></div>
+        
+        <!--Select Date for Available Games-->
+        
         <form action="http://www.example.com/bookings"
         method="post">
             <label for="gameday"><h3>Select Date for Available Games</h3></label> <br />
             <input type="date" name="gameday"/>
             <input type="submit" value="Search Dates" />
         </form>
+        
+        <!--Create AUFS Profile Form-->
+        
         <fieldset>
             <legend>Create AUFS Profile</legend>
             <form action="http://www.example.com/login/" method="post">
@@ -43,6 +56,9 @@
             <input type="submit" value="Register Now" />
             </form>
             </fieldset><br/>
+            
+            <!--Already Registed Login Below Form-->
+            
             <h3>Already Registered? Login Below</h3>
             <form action="http://www.example.com/subscribe.php">
                 <p>Please Enter Your Email Address</p>
@@ -51,6 +67,9 @@
                 <input type="password" name="password" required="required" />
                 <input type="submit" value="Login" />
             </form>
+            
+            <!--URL Share Now Form: Social Media Page-->
+            
             <form action="http://www.example.com/profile.php">
                 <p>Are you on social media? Share your Facebook URL for bonus credits!</p>
                 <input type="url" name="website" required="required" />
