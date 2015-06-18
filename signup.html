@@ -10,18 +10,27 @@
     <body>
         <div class="container"></div>
         <div class="column"></div>
+        <a href="index.html">Home</a> <br />
+        <a href="about.html">About</a>
+        <div class="container"></div>
+        <div class="column"></div>
         <fieldset>
             <legend>Create AUFS Profile</legend>
-            <label>Email: <br />
-            <input type="text" name="email" /> </label> <br />
-            <label>Username: <br />
-            <input type="text" name="username" /> </label> <br />
-            <label>Password: <br />
-            <input type="text" name="password" /> </label> <br />
-            <label>Confirm Password: <br />
-            <input type="text" name="confirm password" /> </label> <br />
+            <form action="http://www.example.com/login/" method="post">
+            <label for="email">Email: </label> <br />
+            <input type="text" name="email" required="required" /> <br />
+            <label for="username">Username: </label> <br />
+            <input type="text" name="username" required="required" /> <br />
+            <label for="password">Password: </label> <br />
+            <input type="text" name="password" required="required" /> <br />
+            <label for="confirm password">Confirm Password: </label> <br />
+            <input type="text" name="confirm password" required="required" /> 
+            <br />
             <input type="submit" value="Register Now" />
+            </form>
             </fieldset>
-
+            
+<script type="text/javascript" src="css/main.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </body>
 </html>
