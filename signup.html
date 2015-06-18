@@ -11,9 +11,23 @@
         <div class="container"></div>
         <div class="column"></div>
         <a href="index.html">Home</a> <br />
-        <a href="about.html">About</a>
+        <a href="about.html">About</a>  
+        <form action="http://www.example.com/search.php">
+            <p>Search AUFS</p>
+            <input type="search" name="search"
+            placeholder="Enter Search Terms"/>
+            <input type="submit" value="Search AUFS" />
+        </form>
+            
+        </form>
         <div class="container"></div>
         <div class="column"></div>
+        <form action="http://www.example.com/bookings"
+        method="post">
+            <label for="gameday"><h3>Select Date for Available Games</h3></label> <br />
+            <input type="date" name="gameday"/>
+            <input type="submit" value="Search Dates" />
+        </form>
         <fieldset>
             <legend>Create AUFS Profile</legend>
             <form action="http://www.example.com/login/" method="post">
@@ -28,7 +42,22 @@
             <br />
             <input type="submit" value="Register Now" />
             </form>
-            </fieldset>
+            </fieldset><br/>
+            <h3>Already Registered? Login Below</h3>
+            <form action="http://www.example.com/subscribe.php">
+                <p>Please Enter Your Email Address</p>
+                <input type="email" name="email" required="required" /> <br />
+                <p>Please Enter Your Password</p>
+                <input type="password" name="password" required="required" />
+                <input type="submit" value="Login" />
+            </form>
+            <form action="http://www.example.com/profile.php">
+                <p>Are you on social media? Share your Facebook URL for bonus credits!</p>
+                <input type="url" name="website" required="required" />
+                <input type="submit" value="Share Now" />
+            </form>
+            <div class="container"></div>
+            <div class="row"></div>
             
 <script type="text/javascript" src="css/main.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
