@@ -8,11 +8,57 @@
 	<link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
     <body>
+        
+         <!--Links to Home Page and About Page-->
+        
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        </ul>
         <div class="container">
+            
+        <!--What is Daily Fantasy Sports Header for YouTube video-->
+            
+            <h2 class="text-center">What is Daily Fantasy Sports</h2>
+            <div id="player"></div>
+            
+        <!--YouTube video describing how to play Daily Fantasy Sports-->    
+            
+            <script>
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                 var player;
+                 function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'syEbEDZ7dgk',
+                events: {
+               'onReady': onPlayerReady,
+               'onStateChange': onPlayerStateChange
+                  }
+                });
+                  }
+                function onPlayerReady(event) {
+                event.target.playVideo();
+                  }
+                 var done = false;
+                 function onPlayerStateChange(event) {
+                 if (event.data == YT.PlayerState.PLAYING && !done) {
+                 setTimeout(stopVideo, 6000);
+                 done = true;
+                }
+                }
+                function stopVideo() {
+                player.stopVideo();
+                }
+            </script>
             
             <!--Where is AUFS located Header-->
             
-            <h3>Where is AUFS located?</h3>
+            <h3 class="text-center">Where is AUFS located?</h3>
             
             <!--Google Maps iFrame-->
             
@@ -26,15 +72,9 @@
          </div>
         <div class="column"></div>
         
-        <!--Links to Home Page and About Page-->
-        
-        <a href="index.html">Home</a> <br />
-        <a href="about.html">About</a>  
-        <form action="http://www.example.com/search.php">
+       <!--Search AUFS Bar-->
             
-        <!--Search AUFS Bar-->
-            
-            <p>Search AUFS</p>
+            <p class="text-center">Search AUFS</p>
             
         <!--Enter Search Terms Placeholder Text-->    
             
@@ -49,7 +89,7 @@
         
         <form action="http://www.example.com/bookings"
         method="post">
-            <label for="gameday"><h3>Select Date for Available Games</h3></label> <br />
+            <h3 class="text-center">Select Date for Available Games</h3></label> <br />
             <input type="date" name="gameday"/>
             <input type="submit" value="Search Dates" />
         </form>
@@ -57,7 +97,7 @@
         <!--Create AUFS Profile Form-->
         
         <fieldset>
-            <legend>Create AUFS Profile</legend>
+            <legend class="text-center">Create AUFS Profile</legend>
             <form action="http://www.example.com/login/" method="post">
             <label for="email">Email: </label> <br />
             <input type="text" name="email" required="required" /> <br />
@@ -74,7 +114,7 @@
             
             <!--Already Registed Login Below Form-->
             
-            <h3>Already Registered? Login Below</h3>
+            <h3 class="text-center">Already Registered? Login Below</h3>
             <form action="http://www.example.com/subscribe.php">
                 <p>Please Enter Your Email Address</p>
                 <input type="email" name="email" required="required" /> <br />
