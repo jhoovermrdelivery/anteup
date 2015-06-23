@@ -1,3 +1,5 @@
+/*Main Background All Pages index*/
+
 body { 
   background: url(http://almala3eb-sport.com/wp-content/uploads/2015/05/american-football-field-backgrounds-at-nightfootball-stadium-3d-hd-wallpapers-1920x1200px-indiwall-ftj5pq6h1.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
@@ -5,16 +7,156 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+  padding:3px;
 }
+
+/*Grey Backgrounds on Text-Center Tags index*/
 
 .text-center {
   background-color:#d3d3d3;
-  font-family:impact, fantasy;
+  font-family:'WebFont',monospace, courier;
+  opacity:0.75;
+  font-weight:bold;
+  
 }
+
+/*How to Begin Playing with AUFS index*/
 
 .lowhead {
   background-color:#d3d3d3;
-  font-family:impact, fantasy
+  font-family:'WebFont', monospace, courier;
+  opacity:0.75;
+  font-weight:bold;
   
 }
+
+/*Username index*/
+
+div#p01 {
+  color:#1F7A1F;
+  font-size:100%;
+  background-color:#333333;
+  font-weight:bold;
+  padding:5px;
+  opacity:0.75;
+  ;
+}
+
+/*Contact AUFS index*/
+
+#contact a {
+  color:#1F7A1F;
+  font-family:'WebFont',monospace, courier;
+  font-weight:bold;
+  font-style:oblique;
+  font-size:20px;
+  background-color:#d3d3d3;
+  opacity:0.75;
+  text-decoration:underline;
+}
+
+/*Sign Up & About index*/
+
+li>a {
+  color:#1F7A1F;
+  font-weight:bold;
+  font-family:'WebFont',monospace, courier;
+  font-size:20px;
+  background-color:#d3d3d3;
+  opacity:0.75;
+  text-decoration:underline
+  ;
+}
+
+/*Daily Fantasy Sports w A Game of Skill text only index*/
+
+#pagedown {
+  color:#1F7A1F;
+  font-weight:bold;
+  font-family:monospace, courier;
+  word-spacing:1em;
+  line-height:1.4em;
+  
+}
+
+/*Head to Head w Users are matched up against opponents text only index*/
+
+#pagedown2 {
+  color:#1F7A1F;
+  font-weight:bold;
+  font-family:'WebFont',monospace, courier;
+}
+
+/*Daily Fantasy Sports Header index*/
+
+#sports {
+  color:black;
+  background-color:#d3d3d3;
+  opacity:0.75;
+}
+
+/*Head to Head Header index*/
+
+#sports1 {
+  color:black;
+  background-color:#d3d3d3;
+  opacity:0.75;
+}
+
+/*TM Ante Up Fantasy Sports Terms Header index*/
+
+#mainhead {
+  font-weight:bold;
+  font-family:'WebFont', monospace, courier;
+  background-color:#d3d3d3;
+  opacity:.75;
+}
+
+/*1,2,3,4 How to Play AUFS text only index*/
+
+#howto {
+  font-family:'WebFont',impact, fantasy;
+  font-weight:bold;
+}
+#intro:first-letter {
+  font-size:200%;
+}
+
+
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+#email2 {
+  font-weight:bold;
+  font-family:'WebFont', monospace, courier;
+  background-color:#d3d3d3;
+  opacity:.75;
+  text-decoration:underline;
+  }
+
+#user1 {
+  text-decoration:underline;
+} 
+
+#pass1 {
+  text-decoration:underline;
+}
+a:link {
+  color:green;
+  text-decoration: none; }
+a:visited {
+  color:black;
+}
+a:hover {
+  color:blue;
+  text-decoration:underline;
+}
+
+
 

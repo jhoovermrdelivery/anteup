@@ -24,51 +24,105 @@
 <!--Countdown Clock-->
 
 <body onload="startTime()">
+	
+	
+<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=519119554908043";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=519112634908735";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="https://www.facebook.com/nflonwallstreet?ref=hl" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
 <!--Username and Password Login-->
+	<form action="http://www.example.com/login.php">
 	 
-	 <form action="http://www.example.com/login.php">
-        <p>Username:
+	 	<div id="p01">
+        <p id="user1">Username:
             <input type="text" name="username" size="15" maxlength="30" />
        </p>
-      <p>Password:
+       </div>
+       <div id="p01">
+      <p id="pass1">Password:
       <input type="password" size="15" maxlength="30" />
       </p>
-      <p>
+     </div>
+     <p>
       <input type="submit" name="subscribe"
       value="Sign In" />
       </p>
+      
       </form>
+     
+      
       
       <!--Ante Up Fantasy Sports Terms Header-->
 	
-	<h1>&trade;Ante Up Fantasy Sports Terms</h1>
-	<a href="#Daily_Fantasy_Sports">Daily Fantasy Sports</a><br/>
-	<a href="#Head_to_Head">Head to Head</a><br />
-	<div class="container">
-		<div class="row">
+	<div id="mainhead"><h1>&trade;Ante Up Fantasy Sports Terms</h1>
+	</div>
 	
+	<ul>
+	
+	<li><a href="#Daily_Fantasy_Sports">Daily Fantasy Sports</a><br/></li>
+	<li><a href="#Head_to_Head">Head to Head</a><br /></li>
+	</ul>
+	
+		
+		
 	<!--Click to Contact AUFS-->
-			
-			<address>
-				<p id="email">
-					<a href="mailto:anteupfantasysports@gmail.com">Contact <abbr title="Ante Up Fantasy Sports"><b>AUFS</b></abbr></a>
-				</p>
-				<p id="pagelinks">
-					    <li><a href="signup.html">Sign Up</a></li>
+		
+		<address>
+		
+		
+			<div id="contact">
+		<p>
+			<a href="mailto:anteupfantasysports@gmail.com"><abbr title="Ante Up Fantasy Sports"><li>Contact AUFS</li></abbr></a>
+		
+		</p>
+		</div>
+			    <p id="pagelinks">
+			    <ul>
+						<li><a href="signup.html">Sign Up</a></li>
 						<li><a href="about.html">About</a></li>
-				</p>
-			</address>
+				</ul>
+		</address>
+		    
+			  
 			
 			<!--Quick Links From Header to Section of Page-->
-			
+		
+			<div class id="pagedown">
 			<dl>
-				<h2 id="Daily_Fantasy_Sports"><dt>Daily Fantasy Sports</dt></h2>
-					<dd>A game of skill, legalized throughout the United States</dd>
-				<h2 id="Head_to_Head"><dt>Head to Head</dt></h2>
-					<dd>Users are matched up against opponents within the same competition</dd>
+				<h2 id="Daily_Fantasy_Sports"><dt id="sports">Daily Fantasy Sports</dt></h2>
+					<dd id="intro">A game of skill, legalized throughout the United States.  Players pick a lineup each day and compete for cash prizes against their friends or other users.  AUFS also provides a lineup generator for those that are not as "sports" savvy.  Which equals fun for all!</dd>
+				</dl>
+			</div>
+			<div class id="pagedown2">
+			<dl>
+				<h2 id="Head_to_Head"><dt id="sports1">Head to Head</dt></h2>
+			
+					<dd id="intro">Users are matched up against opponents within the same competition</dd>
+			
 			</dl>
+			</div>
+			
+			
 			<!--Bootstrap Page Organizer-->
+			
 			<div class="col-xs-2 col-md-4"></div>
 			<div class="col-xs-8 col-md-4">
 			
@@ -80,20 +134,20 @@
 				
 				<h4>What is AUFS?</h4>
 				
-				<p class="play type"><abbr title="Ante Up Fantasy Sports"><b>AUFS</b></abbr> is not your average <i>Daily Fantasy Sports</i> site. We have innovative gameplay functionalities that allow users to experience the full capabilities of managing a lineup like a pro!</p>
+				<p id="intro"><abbr title="Ante Up Fantasy Sports"><b>AUFS</b></abbr> is not your average <i>Daily Fantasy Sports</i> site. We have innovative gameplay functionalities that allow users to experience the full capabilities of managing a lineup like a pro!</p>
 				
-				<p>Start your <b>1<sup>st</sup></b> <i>contest</i> today and experience<br /> all the great action! </p>
+				<p id="intro">Start your <b>1<sup>st</sup></b> <i>contest</i> today and experience<br /> all the great action! </p>
 				
-				<p><strong>Get <span id="money">$25 credit</span> towards your first contest when you create an account</strong></p>
+				<p id="intro"><strong>Get <span id="money">$25 credit</span> towards your first contest when you create an account</strong></p>
 				
-				<p>Login using your Facebook account and share you results with friends</p>
+				<p id="intro">Login using your Facebook account and share you results with friends</p>
 				
 				<h1 class="text-center" name="time" id="txt"></h1>
 				
 				<!--How to Begin Playing with AUFS Header and Text-->
 				
 				<h3 class="lowhead">How to Begin Playing With AUFS</h3>
-				<ol>
+				<ol id="howto">
 					<li>Create an account</li>
 					<li>Select a contest or create a contest</li>
 					<li>Submit a lineup for play</li>
@@ -117,7 +171,6 @@
 			<div class="col-xs-4 col-offset-xs-4">Changes made here.</div>
 		</div>
 		</div>
-	</div>
 	
 	<!--This is where you put your Javascript so the HTML can load first in the header-->
 	
