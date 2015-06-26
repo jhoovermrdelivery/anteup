@@ -39,6 +39,7 @@ body {
   font-weight:bold;
   opacity:0.75;
   width:160px;
+  
 }
 
 /*Sign Up & About index*/
@@ -167,7 +168,7 @@ input {
 #anteuplogo {
   opacity:0.80;
 }
-.scores {
+.scores1 {
   width:200px;
   }
 .uploadbutton {
@@ -243,6 +244,10 @@ input {
 .five {
   margin-bottom:15px;
 }
+
+.logininfo {
+  color:red;
+  font-family:Arial;
 }
   
 

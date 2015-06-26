@@ -123,7 +123,7 @@
         <form action="http://www.example.com/bookings"
         method="post">
             <h3 class="text-center">Select Date for Available Games</h3> <br />
-            <input type="date" name="gameday"/>
+            <input class="logininfo" type="date" name="gameday"/>
             <input type="submit" value="Search Dates" />
         </form>
         
@@ -133,13 +133,13 @@
             <legend class="text-center">Create AUFS Profile</legend>
             <form action="http://www.example.com/login/" method="post">
             <label for="email">Email: </label> <br />
-            <input type="text" name="email" required="required" /> <br />
+            <input class="logininfo" type="text" name="email" required="required" /> <br />
             <label for="username">Username: </label> <br />
-            <input type="text" name="username" required="required" /> <br />
+            <input class="logininfo" type="text" name="username" required="required" /> <br />
             <label for="password">Password: </label> <br />
-            <input type="text" name="password" required="required" /> <br />
+            <input class="logininfo" type="text" name="password" required="required" /> <br />
             <label for="confirm password">Confirm Password: </label> <br />
-            <input type="text" name="confirm password" required="required" /> 
+            <input class="logininfo" type="text" name="confirm password" required="required" /> 
             <br />
             <input type="submit" value="Register Now" />
             </form>
@@ -150,9 +150,9 @@
             <h3 class="text-center">Already Registered? Login Below</h3>
             <form action="http://www.example.com/subscribe.php">
                 <p>Please Enter Your Email Address</p>
-                <input type="email" name="email" required="required" /> <br />
+                <input class="logininfo" type="email" name="email" required="required" /> <br />
                 <p>Please Enter Your Password</p>
-                <input type="password" name="password" required="required" />
+                <input class="logininfo" type="password" name="password" required="required" />
                 <input type="submit" value="Login" />
             </form>
             
@@ -160,7 +160,7 @@
             
             <form action="http://www.example.com/profile.php">
                 <p>Are you on social media? Share your Facebook URL for bonus credits!</p>
-                <input type="url" name="website" required="required" />
+                <input class="logininfo" type="url" name="website" required="required" />
                 <input type="submit" value="Share Now" />
             </form>
             <div class="container"></div>
